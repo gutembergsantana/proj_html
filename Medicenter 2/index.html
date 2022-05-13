@@ -1,0 +1,375 @@
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <!--   <meta name="viewport" content="width=device-width, user-scalable=0"/>  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Gutemberg</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/template.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/normalize.css"/>
+    
+    <script type="text/javascript">
+    window.onload = function(){
+        document.querySelector(".menuMobile").addEventListener("click",function(){
+            if(document.querySelector(".menu nav ul").style.display == 'flex'){
+                document.querySelector(".menu nav ul").style.display = 'none';
+            } else{
+                document.querySelector(".menu nav ul").style.display = 'flex';
+            }
+        });
+    };
+    </script>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+               <a href=""><img id=logomarca src="assets/images/GS_Logo.png" alt="Logomarca da empresa"/></a>
+            </div>
+           
+            <div class="menu">
+                <nav>   <!-- Informa aos buscadores e leitores especiais que é um menu-->
+                <!--    <input type="checkbox" id="chec">
+                    <label for="chec">
+                        <img id="risco" src="assets/images/risco_menu.jpg">
+                    </label>   
+                -->  
+                    <div class="menuMobile">
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                    </div>  
+                    <ul>
+                        <li><a href="">Bancos</a></li>
+                        <!--
+                       <ul>
+                            <li><a href="https://www.bb.com.br/pbb/pagina-inicial#/" target="_black">Banco do Brasil</a>
+                            <li><a href="http://www.caixa.gov.br/Paginas/home-caixa.aspx" target="_blanck">Caixa Econônima</a>        
+                            <li><a href="https://www.bancointer.com.br/" target="_blanck">Banco Inter</a>
+                            <li><a href="https://pagseguro.uol.com.br/conta-digital/conta-digital-gratis" target="_blanck">Pag Banco</a> 
+                        </ul>
+                    -->
+                        <li><a href="">Corretoras</a></li>
+                        <li><a href="">Org Públicos</a></li>
+                        <li><a href="">Ed Financeira</a></li>
+                        <li><a href="">Meus Cursos</a></li>
+                        <li><a href="">Curiosidades</a></li>
+                        <li><a href="">Sobre</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+    <section id="banner">
+        <div class="container column">
+            <div class="banner_headline">
+                <h1>Gutemberg Santana</h1>
+                <h2>O Difícil eu faço logo. O Impossível, demora um pouco</h2>
+            </div>
+            <div class="banner_options">
+                <div class="banner1">
+                    <div class="banner_title">Emergency Case</div>
+                    <div class="banner_desc">Algum texto qualquer 1</div>
+                    <a href="">Read more</a>
+                </div>
+                <div class="banner2">
+                    <div class="banner_title">Doctors Timetable</div>
+                    <div class="banner_desc">Algum texto qualquer 2</div>
+                    <a href="">Read more</a>
+                </div>
+                <div class="banner3">
+                    <div class="banner_title">Opening Hours</div>
+                    <div class="Opening">
+                        <div>Monday - Friday</div>
+                        <div>8:00 - 17:00</div>
+                    </div>
+                    <div class="Opening">
+                        <div>Saturday</div>
+                        <div>9:30 - 17:30</div>
+                    </div>
+                    <div class="Opening">
+                        <div>Sunday</div>
+                        <div>9:30 - 15:00</div>
+                    </div>
+                                        
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="geral">
+        <div class="container">
+            <section>
+                <div class="widget">
+                    <div class="widget_title">
+                        <div class="widget_title_text">Últimas Notícias</div>
+                        <div class="widget_title_bar"> </div>
+                    </div>
+                    <div class="widget_body flex">
+                        <article>
+                            <a href="https://russas.ce.gov.br/category/saude/" target="_blank">
+                                <div class="news_data">
+                                    <div class="news_posted_at"> 09 JUN 20</div>
+                                    <div class="news_comments">2</div>
+                                </div>
+                                <div class="news_thumbnail">
+                                    <img class="img1" src="assets/images/Boletim_Covid19_Russas.jpg" />
+                                </div>
+                                <div class="news_title">
+                                    Covid-19 em Russas
+                                </div>
+                                <div class="news_resume">
+                                    A cidade de Russas registrou nas últimas 24h mais uma morte causada 
+                                    pela Covid-19, subindo para 13 o número de óbitos no Município. 
+                                    A nova morte ocorreu na área do bairro Centro. Já as mortes anteriores 
+                                    foram registradas nas áreas: Jardim de São José (01), Bonhú (01), 
+                                    Mutirão (02), Nossa Senhora de Fátima (02), Pitombeira (03), 
+                                    Planalto (01), Retiro (01) e Catumbela (01). As informações são do 
+                                    Boletim Epidemiológico divulgado na manhã desta quinta-feira, 
+                                    11 de junho.
+                                </div>
+                            </a>
+                        </article>
+                        <article>
+                            <a href="https://pacatuba.ce.gov.br/boletim-coronavirus.php" target="_blanck">
+                                <div class="news_data">
+                                    <div class="news_posted_at"> 09 JUN 20</div>
+                                    <div class="news_comments">2</div>
+                                </div>
+                                <div class="news_thumbnail">
+                                    <img class="img1" src="assets/images/Pacatuba.png" />
+                                </div>
+                                <div class="news_title">
+                                    BOLETIM EPIDEMIOLÓGICO CORONAVIRUS - PACATUBA
+                                </div>
+                                <div class="news_resume">
+                                    A Prefeitura de Pacatuba tem adotado diversas medidas no enfrentamento 
+                                    ao covid-19. Foram instaladas as barreiras sanitárias para evitar a 
+                                    entrada de visitantes, permitindo apenas o acesso de moradores, 
+                                    profissionais e entregadores de produtos essenciais. A duração das 
+                                    barreiras varia de acordo com o decreto estadual e municipal que, 
+                                    atualmente, segue até o próximo dia 31 de maio. 
+                                </div>
+                            </a>
+                        </article>
+                        <article>
+                            <a href="">
+                                <div class="news_data">
+                                    <div class="news_posted_at"> 12 DEC 12</div>
+                                    <div class="news_comments">2</div>
+                                </div>
+                                <div class="news_thumbnail">
+                                    <img class="img1" src="assets/images/imagem1.png" />
+                                </div>
+                                <div class="news_title">
+                                    Loren ipsum dolor sit amat velum
+                                </div>
+                                <div class="news_resume">
+                                    O pedaço mais habitual do Lorem Ipsum usado desde os anos 1500 é 
+                                    reproduzido abaixo para os interessados. As secções 1.10.32 e 1.10.33 
+                                    do "de Finibus Bonorum et Malorum" do Cícero também estão reproduzidos 
+                                    na sua forma original, acompanhados pela sua tradução em Inglês, 
+                                    versões da tradução de 1914 por H. Rackham.
+                                </div>
+                            </a>
+                        </article>
+                        <article>
+                            <a href="">
+                                <div class="news_data">
+                                    <div class="news_posted_at"> 12 DEC 12</div>
+                                    <div class="news_comments">2</div>
+                                </div>
+                                <div class="news_thumbnail">
+                                    <img class="img1" src="assets/images/imagem1.png" />
+                                </div>
+                                <div class="news_title">
+                                    Loren ipsum dolor sit amat velum
+                                </div>
+                                <div class="news_resume">
+                                    O pedaço mais habitual do Lorem Ipsum usado desde os anos 1500 é 
+                                    reproduzido abaixo para os interessados. As secções 1.10.32 e 1.10.33 
+                                    do "de Finibus Bonorum et Malorum" do Cícero também estão reproduzidos 
+                                    na sua forma original, acompanhados pela sua tradução em Inglês, 
+                                    versões da tradução de 1914 por H. Rackham.
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <aside>
+                <div class="widget">
+                    <div class="widget_title">
+                        <div class="widget_title_text">Departmentes</div>
+                        <div class="widget_title_bar"> </div>
+                    </div>
+                    <div class="widget_body">
+                        <div class="blocos">
+                            <div class="bloco1"></div>
+                            <div class="bloco2"></div>
+                        </div>
+                        <div class="blocos">
+                            <div class="bloco1"></div>
+                            <div class="bloco2"></div>
+                        </div>
+                        <div class="blocos">
+                            <div class="bloco1"></div>
+                            <div class="bloco2"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="widget">
+                    <div class="widget_title">
+                        <div class="widget_title_text">Make An Appoitment</div>
+                        <div class="widget_title_bar"> </div>
+                    </div>
+                    <div class="widget_body">
+                        O que é LCI? LCI significa Letra de Crédito Imobiliário. 
+                        Esses Títulos de Renda Fixa são emitidos por instituições 
+                        financeiras para financiar o setor imobiliário. 
+                        A Letra de Crédito Imobiliário possui dois tipos de risco: 
+                        1. Risco primário da instituição financeira emissora; 
+                        2. Risco secundário do Fundo Garantidor de Crédito (FGC) até o limite de R$ 250 
+                        mil para recursos em uma mesma instituição. 
+                        Esse tipo de investimento não tem incidência de Imposto de Renda e na Easynvest 
+                        a taxa de administração é ZERO. <br> <br>
+                        O que é LCA? 
+                        LCA significa Letra de Crédito do Agronegócio. 
+                        São títulos de Renda Fixa, emitidos por instituições financeiras, com o objetivo 
+                        de financiar o setor do agronegócio. A LCA possui: 
+                        1. Garantia do FGC (Fundo Garantidor de Créditos); 
+                        2. Limite R$250 mil (por CPF e por instituição emissora). 
+                        Esse tipo de investimento não tem incidência de Imposto de Renda e na Easynvest 
+                        a taxa de administração é ZERO.
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </section>
+    <footer>
+        <div class="container flexColumn">
+            <div class="footer_menu">
+                <div class="fm_1">
+                    <a href="">
+                        <div class="banner_title">Healt Insurance</div>
+                    <div class="banner_desc">Here in medicenter we have individual &rarr;</div>
+                    </a>
+                </div>
+                <div class="fm_2">
+                    <a href="">
+                        <div class="banner_title">Medical Records</div>
+                    <div class="banner_desc">Here in medicenter we have individual &rarr;</div>
+                    </a>
+                </div>
+                <div class="fm_3">
+                    <a href="">
+                        <div class="banner_title">Online Bill Pay</div>
+                    <div class="banner_desc">Here in medicenter we have individual &rarr;</div>
+                    
+                    </a>
+                </div>
+            </div>
+            <div class="footer_area">
+                <div class="footer_areaitem">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text">Medicenter Clinic</div>
+                            <div class="widget_title_bar"> </div>
+                        </div>
+                        <div class="widget_body">
+                            Mauris adipiscing mauris fringilla turpis interdum sed pulvinar nisi malesuada individual.
+                        </div>
+                        <div class="Opening1">
+                            <div>Medicenter Clinic</div>
+                            
+                        </div>
+                        <div class="Opening1">
+                            <div>33 Farlane Street</div>
+                            <div>+123 655 655</div>
+                        </div>
+                        <div class="Opening1">
+                            <div>Keilor East</div>
+                            <div>+123 755 755</div>
+                        </div>
+                        <div class="Opening1">
+                            <div>VIC 3033, Australia</div>
+                            <div>medicenter@gmail.com</div>
+                        </div>
+                        
+                        <div class="end_icons">
+                            <a href="https://www.facebook.com/" target="_blanck">
+                                <div class="face"></div>
+                            </a>
+                            <a href="https://twitter.com/explore/" target="_blanck">
+                                <div class="twit"></div>
+                            </a>
+                            <a href="https://www.whatsapp.com/" target="_blanck">
+                                <div class="what"></div>
+                            </a>
+                            <a href="https://www.google.com/intl/pt/gmail/about/" target="_blanck">
+                                <div class="emai"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_areaitem">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text">Latest Posts</div>
+                            <div class="widget_title_bar"> </div>
+                        </div>
+                        
+                        <div class="widget_body_seta">
+                            <div class="seta">&rarr; </div>
+                            Mauris adipiscing mauris fringilla turpis interdum: pulvinar nisi malesuada.
+                        </div>
+                        <div class="data_ago">8 years ago</div>
+                        <div class="widget_body_seta">
+                            <div class="seta">&rarr; </div>
+                            Lorem ipsum dolor sit amat velum.
+                        </div>
+                        <div class="data_ago">8 years ago</div>
+                        <div class="widget_body_seta">
+                            <div class="seta">&rarr; </div>
+                            Mauris adipiscing mauris fringilla turpis interdum: pulvinar nisi malesuada.
+                        </div>
+                        <div class="data_ago">8 years ago</div>
+                    </div>
+                </div>
+                <div class="footer_areaitem">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text">Latest Tweets</div>
+                            <div class="widget_title_bar"> </div>
+                        </div>
+                        <div class="widget_body_seta">
+                            <div class="seta">&rarr; </div>
+                            @Gastronomadista Hi, Renovate is including WPBakery Page Builder 
+                            and there are components prepared for this editor.… t.co/xShcwIUK7j
+                        </div>
+                        <div class="data_ago">10 days ago</div>
+                        <div class="widget_body_seta">
+                            <div class="seta">&rarr; </div>
+                            We've released new version (v13.5) of our GymBase #Gym #Fitness 
+                            #WordPress Theme. Please check at #ThemeForest t.co/8mEwDr0hie
+                        </div>
+                        <div class="data_ago">20 days ago</div>
+                        <div class="widget_body_seta">
+                            <div class="seta">&rarr; </div>
+                            We've released new version (v6.1) of our Renovate #Construction 
+                            #Renovation #WordPress Theme. Check at #ThemeForest t.co/Qq0xOm69tZ
+                        </div>
+                        <div class="data_ago">21 days ago</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_copy">
+                Copyright - Todos os direitos reservados e tudo o mais
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#main{
+    display: grid;
+    grid-template-rows: 15vh 10vh 61vh 14vh;
+    grid-template-areas: "header header" "nav nav" "content aside" "footer footer";
+}
+.mainHeader{
+    grid-area: header;
+    background: rgb(1, 71, 83);
+}
+.mainNav{
+    grid-area: nav;
+    background: green;
+    justify-content: center;
+    
+}
+.mainNav ul{
+    padding-left: 60px;
+    padding-top: 7px;
+}
+.mainContent{
+    grid-area: content;
+    background-image: url('./images/banner1.png');
+    background-size: cover;
+    /*background-size: 675px;*/
+}
+.mainAside{
+    grid-area: aside;
+    background-image: url('./images/Sitio0.jpg');
+    /*background-size: 675px;*/
+    background-size: cover;
+}
+.mainFooter{
+    grid-area: footer;
+    background: orange;
+    height: 90px;
+}
+
+.slogan h1{
+    color: #37f507;
+    font-size: 45px;
+    font-family: times;
+    text-shadow: 0px 1px 0px #f5f1f1;
+    margin: 0;
+    padding-right: 500px;
+    justify-content: center;
+}
+.slogan h2{
+    color: #37f507;
+    font-size: 21px;
+    font-family: times;
+    text-shadow: 0px 1px 0px #f5f1f1;
+    margin: 0;
+    padding: 0;
+}
+.mainHeader{
+    display: flex;
+    justify-content: center;
+}
+.logomarca{
+    /*display: flex;*/
+    width:50px;
+    height: 40px;
+    flex: 1;
+    padding-top: 30px;
+    padding-left: 10px;
+}
+
+.mainNav>ul{
+	list-style:none;	
+	position:relative;
+	margin-left:50px;
+	}
+.mainNav ul li{
+        width:140px;
+        height: 100%;
+		float:left;
+	}
+
+.mainNav a{
+	padding:15px;
+	display:block;
+	text-decoration: none;
+	background-color: #222;
+	text-align:center;
+	color: #FFFF00;
+	}
+.mainNav ul ul{
+	list-style:none;
+	position:absolute;
+	visibility:hidden;
+	
+	}
+.mainNav ul li:hover ul{
+    visibility:visible;
+    padding-left: 1px;
+	}
+	
+.mainNav a:hover{
+	background-color:#27330e;
+	}
+
+.mainNav ul ul li{
+	float:none;
+	border-bottom: solid 1px #ccc;
+	}
+.mainNav ul ul li a{
+	background-color:#069;
+	}
+.imgcontent{
+    width: 50px;
+    display: flex;
+}
+
+@media screen and (max-width: 960px){
+    body{
+        background: #cdcdcd;
+    }
+    #main{
+        grid-template-areas: "header" "content" "aside" "footer";
+    }
+    .mainNav{
+        
+        grid-area: header;
+        margin-top: 40px;
+        display: block;
+        width: 40px;
+        margin-right: 20px;
+    }
+    .slogan h2{
+        font-size: 10px;
+    }
+    .slogan h1{
+        font-size: 30px;
+        padding-right: 380px;
+        margin-top: 20px;
+    }
+    .logomarca {
+        display: flex;
+        width: 20px;
+        height: 20px;
+        flex: 1;
+        padding-top: 30px;
+        padding-left: 10px;
+    }
+    .mainNav ul {
+        padding-left:30px;
+        padding-top: 80px;
+    }
+      
+    
+}

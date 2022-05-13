@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#banner{
+    background-size: cover;
+    padding: 0;
+    background-color: rgb(161, 157, 157);
+}
+#banner h1{
+    display: flex;
+    justify-content: center;
+    color: darkgreen;
+    font-size: 60px;
+    text-shadow: 2px 2px 0px #af9a1f;
+    
+}
+
+.foto{
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+   padding-top: 10px;
+}
+.pele{
+    display: flex;
+    flex: 1;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.bandeira{
+    display: flex;
+    width: 5px;
+    flex: 1.5;
+    padding-left: 15px;
+    padding-right: 15px;
+}    
+
+.bibliografia{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+}
+.texto{
+    width: 1300px;
+    justify-content:stretch;
+}
+.video{
+    margin-left: 350px;
+}
